@@ -1,9 +1,5 @@
 <div class="categories" >
-  <div class="blue-bar">
-    <%= link_to image_tag("menu.png"), :back, class: "back-img" %>
-    <h4>CATEGORIES</h4>
-    <%= link_to image_tag("search.png"), :back, class: "back-img" %>
-  </div>
+  <%= render "blue_bar", title: "CATEGORIES", icon: "menu.png",path: groups_path %>
   <p style="color: green"><%= notice %></p>
   <div id="groups">
     <% @groups.each do |group| %>
