@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 html {
   --main-color: #3778c2;
   --second-color: #5fb523;
@@ -39,4 +43,65 @@ html {
 .signup-btn {
   text-decoration: none;
   color:rgb(160, 154, 154);
+}
+
+.register-container,
+.login-container {
+  height: 100vh;
+  background-color: #f5f6f8;
+}
+
+.blue-bar {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: var(--main-color);
+  border-bottom: 2px solid #163150;
+  margin-bottom: 14px;
+}
+
+.blue-bar h3 {
+  margin: 0;
+}
+
+.blue-bar a {
+  margin-left: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.blue-bar input {
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.field input {
+  width: 100%;
+  border: none;
+  padding: 1em;
+  font-size: 13px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.back-img img {
+  width: 24px;
+  height: 24px;
+}
+
+.forgot-container {
+  display: flex;
+  justify-content: center;
+}
+
+.forgot {
+  text-decoration: none;
+  color: #808080;
+  text-align: center;
+  margin-top: 15px;
 }
