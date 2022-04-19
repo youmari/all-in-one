@@ -81,6 +81,10 @@ html {
   margin-right: 5px;
 }
 
+.blue-bar h4 {
+  margin: 10px 0;
+}
+
 .field input {
   width: 100%;
   border: none;
@@ -92,6 +96,7 @@ html {
 .back-img img {
   width: 24px;
   height: 24px;
+  margin-right: 5px;
 }
 
 .forgot-container {
@@ -104,4 +109,66 @@ html {
   color: #808080;
   text-align: center;
   margin-top: 15px;
+}
+
+.category {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px 10px 10px;
+  background-color: #fff;
+}
+
+.icon-name-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-icon img {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.category-name {
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #919191;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.new-group-btn-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-top: 3em;
+  background-color: var(--second-color);
+}
+
+.new-group-btn-container a {
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 1em;
+  border: 2px solid #fff;
+  width: 80%;
+  text-align: center;
+}
+
+.categories {
+  height: 100vh;
+  background-color: #f5f6f8;
+}
+
+.categories .blue-bar {
+  height: 14vh;
 }

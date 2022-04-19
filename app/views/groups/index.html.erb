@@ -1,14 +1,16 @@
-<p style="color: green"><%= notice %></p>
-<%= button_to "log out", destroy_user_session_path, method: :delete  %>
-<h1>Groups</h1>
-
-<div id="groups">
-  <% @groups.each do |group| %>
-    <%= render group %>
-    <p>
-      <%= link_to "Show this group", group %>
-    </p>
-  <% end %>
+<div class="categories" >
+  <div class="blue-bar">
+    <%= link_to image_tag("menu.png"), :back, class: "back-img" %>
+    <h4>CATEGORIES</h4>
+    <%= link_to image_tag("search.png"), :back, class: "back-img" %>
+  </div>
+  <p style="color: green"><%= notice %></p>
+  <div id="groups">
+    <% @groups.each do |group| %>
+      <%= render group %>
+    <% end %>
+  </div>
+  <div class="new-group-btn-container" >
+    <%= link_to "NEW CATEGORY", new_group_path %>
+  </div>
 </div>
-
-<%= link_to "New group", new_group_path %>

@@ -1,17 +1,7 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= image_tag(group.icon) %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= group.user_id %>
-  </p>
-
-</div>
+<article class="category" id="<%= dom_id group %>">
+  <div class="icon-name-container" >
+    <%= link_to image_tag(group.icon), group, class: "category-icon"%>
+    <%= link_to group.name, group, class: "category-name" %>
+  </div>
+  <strong class="category-amount" >$17.00</strong>
+</article>
