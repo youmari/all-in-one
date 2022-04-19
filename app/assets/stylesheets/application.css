@@ -85,8 +85,9 @@ html {
   margin: 10px 0;
 }
 
+
 .field input {
-  width: 100%;
+  width: -webkit-fill-available;
   border: none;
   padding: 1em;
   font-size: 13px;
@@ -111,7 +112,8 @@ html {
   margin-top: 15px;
 }
 
-.category {
+.category,
+.expense-container {
   display: flex;
   padding: 1em;
   align-items: center;
@@ -119,6 +121,7 @@ html {
   margin: 0 10px 10px 10px;
   background-color: #fff;
 }
+
 
 .icon-name-container {
   display: flex;
@@ -151,9 +154,13 @@ html {
   padding: 1em;
   margin-top: 3em;
   background-color: var(--second-color);
+  height: 9vh;
 }
 
-.new-group-btn-container a {
+.new-group-btn-container a,
+.new-group-btn-container input,
+.create-group-btn,
+.delete-group-btn {
   cursor: pointer;
   color: #fff;
   font-size: 17px;
@@ -162,13 +169,31 @@ html {
   border: 2px solid #fff;
   width: 80%;
   text-align: center;
+  background-color: var(--second-color);
 }
 
-.categories {
-  height: 100vh;
+.delete-group-btn {
+  width: auto;
+}
+
+.categories,
+.expense-vh {
+  overflow-y: auto;
+  height: 86vh;
   background-color: #f5f6f8;
 }
 
 .categories .blue-bar {
   height: 14vh;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+}
+
+.select-container select {
+  border: none;
+  padding: 1em;
+  width: 100%;
 }
