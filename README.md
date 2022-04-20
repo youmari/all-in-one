@@ -92,6 +92,10 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
+## Acknowledgments
+
+- Special thanks for [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) the Owner of the Original design
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
