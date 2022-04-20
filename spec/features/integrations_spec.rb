@@ -4,7 +4,7 @@ RSpec.describe 'group Index', type: :feature do
   describe 'User' do
     before(:each) do
       @user1 = User.create(name: 'lolo', email: 'test@gmail.com', password: 1_234_567, password_confirmation: 1_234_567)
-      @group = Group.create
+      # @group = Group.create
       visit 'users/sign_in'
       fill_in 'Email', with: 'test@gmail.com'
       fill_in 'Password', with: 1_234_567
@@ -27,7 +27,7 @@ RSpec.describe 'group Index', type: :feature do
     it 'create new category' do
       click_on 'NEW CATEGORY'
       fill_in 'Name',	with: 'clothes'
-      page.attach_file('group[icon]', "#{Rails.root}spec/features/search.png")
+      page.attach_file('group[icon]', 'spec/features/search.png')
       click_on 'Create Group'
       expect(page).to have_content('Group was successfully created.')
       expect(page).to have_content('clothes')
@@ -36,7 +36,7 @@ RSpec.describe 'group Index', type: :feature do
       before(:each) do
         click_on 'NEW CATEGORY'
         fill_in 'Name',	with: 'clothes'
-        page.attach_file('group[icon]', "#{Rails.root}spec/features/search.png")
+        page.attach_file('group[icon]', 'spec/features/search.png')
         click_on 'Create Group'
       end
 
