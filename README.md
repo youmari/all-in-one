@@ -16,6 +16,8 @@ Additional description about the project and its features.
 - Cancancan
 - Capybara
 
+## Live demo
+- [Live link demo](https://salty-reef-99896.herokuapp.com/)
 ## Gems Used
 
 - Rubocop
