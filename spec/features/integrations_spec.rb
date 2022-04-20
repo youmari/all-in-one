@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe 'group Index', type: :feature do
   describe 'User' do
     before(:each) do
-      picture = 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
       @user1 = User.create(name: 'lolo', email: 'test@gmail.com', password: 1_234_567, password_confirmation: 1_234_567)
       @group = Group.create
       visit 'users/sign_in'
