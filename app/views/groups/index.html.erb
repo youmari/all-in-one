@@ -1,0 +1,12 @@
+<div class="categories" >
+  <%= render "blue_bar", title: "CATEGORIES", icon: "menu.png",path: groups_path %>
+  <p style="color: green"><%= notice %></p>
+  <div id="groups">
+    <% @groups.each do |group| %>
+      <%= render group %>
+    <% end %>
+  </div>
+  <div class="new-group-btn-container" >
+    <%= link_to "NEW CATEGORY", new_group_path %>
+  </div>
+</div>

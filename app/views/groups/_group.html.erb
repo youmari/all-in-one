@@ -1,0 +1,7 @@
+<article class="category" id="<%= dom_id group %>">
+  <div class="icon-name-container" >
+    <%= link_to image_tag(group.icon), group, class: "category-icon"%>
+    <%= link_to group.name, group, class: "category-name" %>
+  </div>
+  <strong class="category-amount" >$<%= Group.total(group) %></strong>
+</article>

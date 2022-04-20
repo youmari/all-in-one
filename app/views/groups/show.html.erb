@@ -1,0 +1,16 @@
+<div class="expense-vh" >
+  <%= render "blue_bar", title: "Expenses", icon: "back.png", path: groups_path %>
+  <p style="color: green"><%= notice %></p>
+  <%= render @group %>
+  <ul style="padding: 0;" >
+    <% @group.expenses.includes(:groups).order(created_at: :DESC).each do |expense| %>
+      <li class="expense-container">
+        <h3><%= expense.name %></h3>
+        <strong>$<%= expense.amount %></strong>
+      </li>
+    <% end %>
+  </ul>
+  <div class='new-group-btn-container'>
+    <%= link_to "ADD EXPENSE", new_expense_path, class:"delete-group-btn" %>
+  </div>
+</div>
