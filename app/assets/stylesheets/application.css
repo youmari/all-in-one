@@ -86,7 +86,8 @@ html {
 }
 
 .field input {
-  width: -webkit-fill-available; /* stylelint-disable-line Invalid value for `width` */
+  /* stylelint-disable-next-line */
+  width: -webkit-fill-available;
   border: none;
   padding: 1em;
   font-size: 13px;
