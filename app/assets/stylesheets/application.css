@@ -42,7 +42,7 @@ html {
 
 .signup-btn {
   text-decoration: none;
-  color:rgb(160, 154, 154);
+  color: rgb(160, 154, 154);
 }
 
 .register-container,
@@ -85,8 +85,8 @@ html {
   margin: 10px 0;
 }
 
-
 .field input {
+  /* stylelint-disable-next-line */
   width: -webkit-fill-available;
   border: none;
   padding: 1em;
@@ -121,7 +121,6 @@ html {
   margin: 0 10px 10px 10px;
   background-color: #fff;
 }
-
 
 .icon-name-container {
   display: flex;
