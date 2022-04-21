@@ -196,3 +196,13 @@ html {
   padding: 1em;
   width: 100%;
 }
+
+.date-con {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-con p {
+  margin-top: 7px;
+  color: #bebebe;
+}

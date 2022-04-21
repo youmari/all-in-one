@@ -5,7 +5,10 @@
   <ul style="padding: 0;" >
     <% @group.expenses.includes(:groups).order(created_at: :DESC).each do |expense| %>
       <li class="expense-container">
-        <h3><%= expense.name %></h3>
+        <div class="date-con" >
+          <h3><%= expense.name %></h3>
+          <p><%= expense.created_at %></p>
+        </div>
         <strong>$<%= expense.amount %></strong>
       </li>
     <% end %>
