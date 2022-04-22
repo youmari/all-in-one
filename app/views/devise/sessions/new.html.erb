@@ -1,0 +1,23 @@
+<div class="login-container" >
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: false }) do |f| %>
+     <div class="blue-bar">
+      <%= link_to image_tag("back.png"), :back, class: "back-img" %>
+      <h3>LOGIN</h3>
+      <div class="actions">
+        <%= f.submit "Log In" %>
+      </div>
+    </div>
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
+    </div>
+
+  <% end %>
+  <div class="forgot-container" >
+    <%= render "devise/shared/links" %>
+  </div>
+
+</div>
